@@ -1,7 +1,5 @@
 package day9;
 
-import com.sun.source.doctree.SystemPropertyTree;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -113,16 +111,15 @@ public class Solution {
                 break;
             }
 
-            if(values.get(s.from) >= target){
+            if (values.get(s.from) >= target) {
                 System.out.print("INDIVIDUAL ELEMENT EXCEEDED TARGET!");
                 break;
             }
 
             // update inputs
-            from = s.from +1;
+            from = s.from + 1;
             to = s.to;
         }
-
 
 
     }
@@ -161,8 +158,8 @@ class SolOrCursor {
                 '}';
     }
 
-    public long part2Sol(List<Long> ls){
-        List<Long> l  = ls.subList(this.from,this.to);
+    public long part2Sol(List<Long> ls) {
+        List<Long> l = ls.subList(this.from, this.to);
         return Collections.max(l) + Collections.min(l);
     }
 }
