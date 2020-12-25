@@ -78,11 +78,11 @@ public class Solution {
     }
 
     public static void solvePart2(HashMap<Integer, Long> schedule) {
-        // We notice that at index = 19, a lot of conditions need to be satisfied
+        // We notice that at index = 19, a lot of conditions need to be satisfied:
         // we have candidate + 19 % 19 = 0
         //     ... candidate + 0  % 787 = 0
         //     ... candidate + -13  % 13 = 0
-        // And they are all prime ! Nice! (no need to bother with factorization
+        // And they are all prime ! Nice! (no need to bother with factorization)
         // So instead, of finding candidate, we will find candidate + 19 first
 
         System.out.println(schedule.toString());
